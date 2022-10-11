@@ -1,0 +1,1000 @@
+/* CSS boilerplate  */
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+  - Smooth Scroll
+  - Base Styles 
+  - Typography 
+  - Links
+  - Buttons
+  - Forms
+  - Lists
+  - Code
+  - Tables
+  - Images
+  - Media Queries
+*/
+:root{--body:rgb(0, 0, 0);--main:rgb(0, 5, 61);--h1:rgb(17, 0, 255);--h2:color black;--h3:color yellow;--h4:color red;--h5:color pink;--h6:color orange;--blockquote:color brown;--code:color green;--p:color black;--table:color red;--form:color rgb(62, 0, 124);--footer:rgb(0, 103, 0)}
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Base Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    color: var(--body); 
+  }
+    
+  /* Typography
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  h1, h2, h3 {
+    font-weight: 300; 
+    margin: .5em 0;
+  
+  }
+  h4, h5, h6 {
+    font-weight: 700; 
+  }
+  h1 { font-size: 2.0em; line-height: 1.6;  }
+  h2 { font-size: 1.6em; line-height: 1.6; }
+  h3 { font-size: 1.3em; line-height: 1.6;  }
+  
+  .centre {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+  .justify {
+    text-align: justify;
+  }
+  /* Links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  a {
+    color: #06664e; }
+  a:hover,
+  a:visited {
+    color: #0FA0CE; }
+  
+  /* Buttons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: inline-block;
+    height: 2.3em;
+    padding: 2px 30px;
+    color: #555;
+    text-align: center;
+    font-size: .8em;
+    font-weight: 600;
+    line-height: 2em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box; }
+  
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  .button:focus,
+  button:focus,
+  input[type="submit"]:focus,
+  input[type="reset"]:focus,
+  input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0; }
+  
+  .button.button-primary,
+  button.button-primary,
+  input[type="submit"].button-primary,
+  input[type="reset"].button-primary,
+  input[type="button"].button-primary {
+    color: #FFF;
+    background-color: #06664e;
+    border-color: #06664e; }
+  
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB; }
+  
+  
+  /* Forms
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box; }
+  
+  /* Removes awkward default styles on some inputs for iOS */
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+  
+  
+  textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px; }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #007ca1;
+    outline: 0; }
+  
+  label,
+  legend {
+    display: block;
+    margin-bottom: .5em;
+    font-weight: 600; }
+  
+  fieldset {
+    padding: 0;
+    border-width: 0; }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline; }
+  
+  label > .label-body {
+    display: inline-block;
+    margin-left: .5em;
+    font-weight: normal; }
+  
+  
+  /* Lists
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  ul {
+    list-style: circle inside; }
+  ol {
+    list-style: decimal inside; }
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0; }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin: 1em 0 1em 3em;
+  }
+  li {
+    margin-bottom: 1em; }
+  
+  
+  /* Code
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  code {
+    padding: .2em .5em;
+    margin: 0 .2em;
+    font-size: 90%;
+    white-space: nowrap;
+    background: #F1F1F1;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px; }
+  pre > code {
+    display: block;
+    padding: 1em 1em;
+    white-space: pre; }
+  
+  
+  /* Tables
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  table {
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #c4c3c3; }
+  th:first-child,
+  td:first-child {
+    padding-left: 0; }
+  th:last-child,
+  td:last-child {
+    padding-right: 0; }
+  
+  
+  /* Images
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  figure {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 48em) {
+    h1 { 
+      font-size: 3.0em; 
+      line-height: 1.6;
+      margin: 0.5em 0;  
+    }
+    h2 { 
+      font-size: 2em; 
+      line-height: 1.6; 
+      margin-bottom: 0.5em;  
+    }
+    h3 { 
+      font-size: 1.6em; 
+      line-height: 1.6;  
+    }
+  }
+  
+  /* Larger than desktop 
+  @media screen and (min-width: 60em) {}
+  */
+  /* Larger than Desktop HD 
+  @media screen and (min-width: 100em) {}
+  */
+  /* - Veljið ykkar Grid lausn: https://gridbyexample.com/examples/ */
+
+/* 6 dálka grid -  Mobile up 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1em;
+}
+.container {
+  padding:1em;
+}
+/* vinnurammi */
+.rammi {
+  margin: 1em 0;
+}
+.rammi div{
+  border: 1px dotted;
+  text-align: center;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than mobile */
+
+
+/* Larger than phablet (also point when grid becomes active) */
+@media screen and (min-width: 40em) {
+  .col-2,
+  .col-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1em;
+  }
+  .col-3,
+  .col-5,
+  .col-6 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1em;
+  }
+}
+
+/* Larger than mobile */
+@media screen and (min-width: 48em) {
+  .col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Larger than tablet */
+@media screen and (min-width: 60em) {
+  .container {
+    max-width: 60em;
+    margin: 1em auto;
+    padding: 0;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 80em) {
+  .container {
+    max-width: 80em;
+  }
+}
+
+/* fastir dálkar = .col-nf = fixed */
+.col-1f,
+.col-2f,
+.col-3f,
+.col-4f,
+.col-5f,
+.col-6f {
+  display: grid;
+  row-gap: 1em;
+}
+.col-1f {
+  grid-template-columns: 1fr;
+}
+.col-2f {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-3f {
+  grid-template-columns: repeat(3, 1fr);
+}
+.col-4f {
+  grid-template-columns: repeat(4, 1fr);
+}
+.col-5f {
+  grid-template-columns: repeat(5, 1fr);
+}
+.col-6f {
+  grid-template-columns: repeat(6, 1fr);
+}
+@media screen and (min-width:48em) {
+  .col-2f, .col-3f, .col-4f, .col-5f, .col-6f {
+    grid-gap: 1em;
+  }
+}
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+
+
+#container {
+	margin: 0 auto;
+	max-width: 890px;
+}
+
+
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: #000000;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+    color:#ffffff;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: #000000;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #140082; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #29006b; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+
+@media all and (max-width : 48em) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #0c0068;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+       
+	}
+   
+	.toggle:hover {
+        
+		background-color: #a50b0b;
+	}
+    .toggle:active{
+     
+        transition: all 10s linear;
+        transform: rotate(180deg);
+    }
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #000000; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+    @media all and (min-width : 48em) 
+    {
+    
+    }
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?cd72c1');
+    src:  url('fonts/icomoon.eot?cd72c1#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?cd72c1') format('truetype'),
+      url('fonts/icomoon.woff?cd72c1') format('woff'),
+      url('fonts/icomoon.svg?cd72c1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    color: #0087cc;
+    padding-left: 22px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #ff7b29;
+  }
+  a[href$=".pdf"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/pdf.png");
+  }
+  a[href$=".doc"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/doc.png");
+  }
+  a[href$=".jpg"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/image.png");
+  }
+  a[href$=".mp3"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/audio.png");
+  }
+  a[href$=".mp4"] {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/video.png");
+  }
+  
+  .icon-home:before {
+    content: "\e900";
+  }
+  .icon-office:before {
+    content: "\e903";
+  }
+  .icon-images:before {
+    content: "\e90e";
+  }
+  .icon-headphones:before {
+    content: "\e910";
+  }
+  .icon-pacman:before {
+    content: "\e916";
+  }
+  .icon-feed:before {
+    content: "\e91d";
+  }
+  .icon-library:before {
+    content: "\e921";
+  }
+  .icon-mobile:before {
+    content: "\e958";
+  }
+  .icon-mobile2:before {
+    content: "\e959";
+  }
+  .icon-users:before {
+    content: "\e972";
+  }
+  .icon-user-plus:before {
+    content: "\e973";
+  }
+  .icon-user-minus:before {
+    content: "\e974";
+  }
+  .icon-key:before {
+    content: "\e98d";
+  }
+  .icon-eye:before {
+    content: "\e9ce";
+  }
+  
+/*
+  ========================================
+  Box-sizing
+  ========================================
+*/
+*{
+    box-sizing: border-box;
+  }
+  
+  /*
+  ========================================
+  Clearfix
+  ========================================
+  */
+  
+  
+  .group:before,
+  .group:after {
+  content: "";
+  display: table;
+  }
+  .group:after {
+  clear: both;
+  }
+  .group {
+  clear: both;
+  *zoom: 1;
+  }
+  tr:nth-child(even) td {
+    background: #ff8c00;
+  }
+  #signup {
+  
+  }
+  .right {
+    text-align: right;
+  }
+  
+  .fela { display: none;}
+  .bluebak{
+    background-color: rgb(96, 199, 199);
+    width: 100%;
+  background-size: cover;
+  
+  
+  margin: 0;
+  padding: 0;
+  }
+  .greenbak{
+    background-color: rgb(8, 232, 101);
+    width: 100%;
+  background-size: cover;
+  
+  
+  margin: 0;
+  padding: 0;
+  }
+  .redbak{
+    background-color: rgb(211, 242, 76);
+    width: 100%;
+  background-size: cover;
+  
+  
+  margin: 0;
+  padding: 0;
+  }
+  .bakgrunnur{
+    background-image:linear-gradient(#ff0000,#0500a1);
+    background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  }
+  .footercolor{
+    color: #ddd;
+    background-color: #0500a1;
+    background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;}
+  .value{
+    text-align: center;
+  
+  }
+  .left{
+    align-items: left;
+    text-align: left;
+  }
+  .value h1{
+  
+    width: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+   
+    font-size: 32px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-left: 37%;
+    
+    display: block;
+  }
+  
+  .mobil{
+  position: relative;
+  padding: 0 1em;
+  width: 50%;
+  rotate: 10deg;
+  
+  
+  
+  }
+  
+  
+  
+  .mid{
+      text-align: center;
+      
+      grid-area: 2fr 1fr;
+  }
+  
+  footer p{text-align: center;}
+  
+  @media only screen and (min-width: 48em) {
+  header, table, .schedule,tbody, footer, .midja{
+      width:80%;
+      margin:0px auto;
+    }
+  
+    }
+    @media only screen and (max-width: 48em) {
+      table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      
+      table tr {
+        border-bottom: 3px solid #ddd;
+        margin: 5px;
+        display: block;
+        
+      }
+      
+      table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: right;
+      }
+      
+      table td::before {
+        content: attr(data-label);
+        float: left;
+      }
+  
+    }
+     /* 
+ hugmynd simi og im an image  sem staekar eda minkar eva madur hoverar iryr han med musina 
+ */
+ 
+ figure{
+
+    margin-left: auto;
+    position: relative;
+    padding: 0 1em;
+    width: 100%;
+    transition: width 2s;
+    display: block;
+    }
+    
+    figure:hover {
+      width: 400px;
+    }
+  
+  
+   
+   
+   
+   /* 
+   hugmynd texti sem breytist um lity
+   */
+  .regnboga
+  {
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+   
+  }
+  
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @import url(https://fonts.googleapis.com/css?family=Montserrat);
+  
+  
+  
+  svg {
+      display: block;
+      font: 10.5em 'Montserrat';
+      margin: 0 auto;
+  }
+  
+  .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+    stroke: #4D163D;
+    animation-delay: -1;
+  }
+  
+  .text-copy:nth-child(2){
+    stroke: #840037;
+    animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(3){
+    stroke: #BD0034;
+    animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(4){
+    stroke: #BD0034;
+    animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(5){
+    stroke: #FDB731;
+    animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+  }
+  @media only screen and (max-width: 48em) {
+     svg {display:none;}
+  }
+  
